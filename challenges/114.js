@@ -36,7 +36,8 @@
 // ```
 
 function flatten(array){
-    // your code here
+    const reducer = (accumulator, current) => current.concat(accumulator);
+    return array.reduce(reducer);
 }
 
 module.exports = flatten;
